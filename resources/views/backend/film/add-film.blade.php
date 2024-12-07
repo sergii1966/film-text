@@ -1,0 +1,18 @@
+@extends('backend.layouts.backend-layout')
+@include('backend.common.flash-messages')
+@include('backend.common.navbar')
+@include('backend.film.add-film.form-status')
+@include('backend.film.add-film.form-name')
+@include('backend.film.add-film.form-add-poster')
+@include('backend.film.add-film.form-add-category')
+@include('backend.film.add-film.edit-poster-film')
+
+@section('content')
+    @yield('navbar')
+    @yield('flash-messages')
+    @yield('form-status')
+    @yield('form-name')
+    @yield('form-category')
+    @yield('form-add-poster')
+    @yield('edit-poster-film')
+@endsection
